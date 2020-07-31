@@ -2,20 +2,22 @@ verse_dict =  {'if': 3, 'you': 6, 'can': 3, 'keep': 1, 'your': 1, 'head': 1, 'wh
 print(verse_dict, '\n')
 
 # find number of unique keys in the dictionary
-num_keys = 
+num_keys = len(verse_dict) # dictionary keys are always unique
 print(num_keys)
 
 # find whether 'breathe' is a key in the dictionary
-contains_breathe = 
+contains_breathe = 'breathe' in verse_dict # membership test
 print(contains_breathe)
 
 # create and sort a list of the dictionary's keys
-sorted_keys = 
+sorted_keys = sorted(verse_dict.keys()) # .keys() accesses the keys, which are then sorted into a list
 
 # get the first element in the sorted list of keys
-print()
+print(sorted_keys[0]) # zero-indexed
 
 # find the element with the highest value in the list of keys
-print() 
+print(sorted_keys[-1]) # the last element in the sorted list 
 
-bonus_question_what_is_the_first_key_in_verse_dict = 'if'
+bonus_question_what_is_the_first_key_in_verse_dict = 'if' # print(list(verse_dict.keys())[0]): converts the keys to a list and accesses the first item of list
+
+print(list(verse_dict.keys())[0])
