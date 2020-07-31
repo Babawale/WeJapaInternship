@@ -12,19 +12,19 @@ print(verse)
 
 
 #1. What is the length of the string variable verse?
-print("\nThe lenght of the string is {}.".format(len(verse)))
+print("\nThe lenght of the string is {}.".format(len(verse))) # len() returns length
 
 
 #2. What is the index of the first occurrence of the word 'and' in verse?
-print("The index of the first occurence of the word 'and' is {}.".format(verse.find('and')))
+print("The index of the first occurence of the word 'and' is {}.".format(verse.find('and'))) # find(arg) returns the first occurence of arg
 
 
 #3. What is the index of the last occurrence of the word 'you' in verse?
 
-print("The index of the last occurence of the word 'you' is {}.".format(verse.rfind('you')))
+print("The index of the last occurence of the word 'you' is {}.".format(verse.rfind('you'))) # rfind(arg) searchesin reverse
 
 
 
 
 #4. What is the count of occurrences of the word 'you' in the verse?
-print("The count of the occurences of the word 'you' is {}.".format(verse.count('you')))
+print("The count of the occurences of the word 'you' is {}.".format(verse.count('you'))) # count(arg) returns frequency of arg in list
