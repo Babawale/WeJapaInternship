@@ -8,4 +8,4 @@ eclipse_dates = ['June 21, 2001', 'December 4, 2002', 'November 23, 2003',
                  
                  
 # TODO: Modify this line so it prints the last three elements of the list
-print(eclipse_dates)
+print(eclipse_dates[-3:])

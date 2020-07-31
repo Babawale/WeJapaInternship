@@ -3,9 +3,14 @@ elements = {'hydrogen': {'number': 1, 'weight': 1.00794, 'symbol': 'H'},
 
 # todo: Add an 'is_noble_gas' entry to the hydrogen and helium dictionaries
 # hint: helium is a noble gas, hydrogen isn't
+elements['hydrogen']['is_noble_gas'] = False # adds new key-value pair to hydrogen
+elements['helium']['is_noble_gas'] = True # adds new key-value pair to helium
 #hint: After inserting the new entries you should be able to perform these lookups:
 
 #>>>print(elements['hydrogen']['is_noble_gas'])
 #<<< False
 #>>> print(elements['helium']['is_noble_gas'])
 #<<< True
+
+print(elements['hydrogen']['is_noble_gas']) # prints False
+print(elements['helium']['is_noble_gas']) # prints True

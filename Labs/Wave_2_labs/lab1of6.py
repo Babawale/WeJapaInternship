@@ -9,13 +9,13 @@ verse = "if you can keep your head when all about you are losing theirs and blam
 print(verse, '\n')
 
 # split verse into list of words
-verse_list =
+verse_list = verse.split(" ")
 print(verse_list, '\n')
 
 # convert list to a data structure that stores unique elements
-verse_set =
+verse_set = set(verse_list)
 print(verse_set, '\n')
 
 # print the number of unique words
-num_unique = 
+num_unique = len(verse_set)
 print(num_unique, '\n')
