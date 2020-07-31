@@ -5,17 +5,23 @@
 #2. Convert the list into a data structure that would keep only the unique elements from the list.
 #3. Print the length of the container.
 
-verse = "if you can keep your head when all about you are losing theirs and blaming it on you   if you can trust yourself when all men doubt you     but make allowance for their doubting too   if you can wait and not be tired by waiting      or being lied about  don’t deal in lies   or being hated  don’t give way to hating      and yet don’t look too good  nor talk too wise"
+verse = "if you can keep your head when all about you are losing theirs and blaming it on you if you can trust yourself when all men doubt you but make allowance for their doubting too   if you can wait and not be tired by waiting      or being lied about  don’t deal in lies   or being hated  don’t give way to hating      and yet don’t look too good  nor talk too wise"
 print(verse, '\n')
 
 # split verse into list of words
-verse_list = verse.split(" ")
+# verse_list = verse.replace("  ", " ")
+verse_list = verse.split(" ") # splits verse, with " " as delimiter, into list of words 
+
 print(verse_list, '\n')
 
 # convert list to a data structure that stores unique elements
-verse_set = set(verse_list)
+verse_set = set(verse_list) # retains only unique elements
+
+verse_set.remove('') # removes '' from the resulting set
+
 print(verse_set, '\n')
 
 # print the number of unique words
-num_unique = len(verse_set)
+num_unique = len(verse_set) # verse_set already has unique words
+
 print(num_unique, '\n')
