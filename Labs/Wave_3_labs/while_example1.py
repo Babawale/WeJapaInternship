@@ -8,12 +8,17 @@
 
 
 
-start_num = #provide some start number
-end_num = #provide some end number that you stop when you hit
-count_by = #provide some number to count by 
+start_num = 5 #provide some start number
+end_num = 150 #provide some end number that you stop when you hit
+count_by = 10 #provide some number to count by 
 
 # write a while loop that uses break_num as the ongoing number to 
 #   check against end_num
 
+break_num = start_num  # set break_num equal to start_num before the loop starts
+while break_num < end_num: # checks if we have hit or surpass the end_num. Stops when break_num >= end_num.
+    break_num += count_by  # increases (changes) break_num each time through the loop. 
 
-print(break_num)
+print(break_num) # prints 155 i.e the first number larger than end_num.
+
+# NB: The condition stated above as "It is the case that break_num should be a number that is the first number larger than end_num" is not always true. Rather it depends on the values inputted for start_num, end_num, and count_by.

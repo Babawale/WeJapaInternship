@@ -12,6 +12,10 @@ html_str = "<ul>\n"  # "\ n" is the character that marks the end of the line, it
                      # the characters that are after it in html_str are on the next line
 
 # write your code here
-
+for item in items: # loops through the list of items
+    html_str += "<li>{}</li>\n".format(item) # adds a new line to html_str
+                                             # with the item inserted between <li> tags 
+                                             # and \n ensure next item is on a new line 
+html_str += "</ul>" # adds a closing "</ul>" tag to html_str.
 
 print(html_str)

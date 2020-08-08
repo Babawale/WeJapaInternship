@@ -13,9 +13,36 @@
 #Note: Feel free to test run your code with other inputs, but when you submit your answer, only use the original input of points = 174. You can hide your other inputs by commenting them out.
 
 
+# This block of code checks for all cases, edge cases inclusive
+#points_list = [-1, -5, 0, 5, 49, 51, 150, 152, 180, 181, 200, 201]
+#for points in points_list:
+#    if points <= 0 or points > 200:  # handles edge out of range cases (negative or higher than 200)
+#        result = "Points can only range from 1 to 200 inclusive."
+#    elif points <= 50:
+#        result = "Congratulations! You won a wooden rabbit!"
+#    elif points <= 150:
+#        result = "Oh dear, no prize this time."
+#    elif points <= 180:
+#        result = "Congratulations! You won a wafer-thin mint!"
+#    else:
+#        result = "Congratulations! You won a penguin!"
+
+#    print(result)
+
+
+    
 points = 174  # use this input to make your submission
 
 # write your if statement here
-
+if points <= 0 or points > 200:  # handles edge cases of out of range points (negative or higher than 200)
+    result = "Points can only range from 1 to 200 inclusive."
+elif points <= 50:
+    result = "Congratulations! You won a wooden rabbit!"
+elif points <= 150:
+    result = "Oh dear, no prize this time."
+elif points <= 180:
+    result = "Congratulations! You won a wafer-thin mint!"
+else:
+    result = "Congratulations! You won a penguin!"
 
 print(result)

@@ -8,14 +8,14 @@
 # Fill in the conditionals below to inform the user about how
 # their guess compares to the answer.
 # '''
-answer = #provide answer
-guess = #provide guess
+answer = 40 #provide answer
+guess = 90 #provide guess
 
-if #provide conditional
+if guess < answer:
     result = "Oops!  Your guess was too low."
-elif #provide conditional
+elif guess > answer:
     result = "Oops!  Your guess was too high."
-elif #provide conditional
+elif guess == answer: # else without any conditionals will also work here
     result = "Nice!  Your guess matched the answer!"
 
 print(result)

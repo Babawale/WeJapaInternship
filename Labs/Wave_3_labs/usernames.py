@@ -13,9 +13,11 @@
 
 
 names = ["Joey Tribbiani", "Monica Geller", "Chandler Bing", "Phoebe Buffay"]
-usernames = []
+usernames = [] # initializes an empty list for the usernames
 
 # write your for loop here
+for name in names:
+    usernames.append(name.lower().replace(" ", "_")) # converts the names to lowercase and replaces the space in each name to an underscore and appends it to the usernames list.
 
 
 print(usernames)

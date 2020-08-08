@@ -6,6 +6,9 @@
 limit = 40
 
 # write your while loop here
-
+start_num = 1       # initializes 1 as the least/start number
+while (start_num)**2 < limit:
+    nearest_square = start_num**2 # computes the square of the number at each time through the loop
+    start_num += 1 # increments(changes) the number by 1
 
 print(nearest_square)

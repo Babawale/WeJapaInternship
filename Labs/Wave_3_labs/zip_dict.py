@@ -4,5 +4,6 @@
 cast_names = ["Barney", "Robin", "Ted", "Lily", "Marshall"]
 cast_heights = [72, 68, 72, 66, 76]
 
-cast = # replace with your code
+# replace with your code
+cast = dict(zip(cast_names, cast_heights)) # zips both list together and converts to dictionary
 print(cast)

@@ -9,7 +9,9 @@ labels = ["F", "J", "A", "Q", "Y", "B", "W", "X"]
 
 points = []
 # write your for loop here
-
+zipped = zip(labels, x_coord, y_coord, z_coord) # zips the labels and coordinates together in required order
+for point in zipped:
+   points.append("{}: {}, {}, {}".format(*point)) #unzips each point and appends the labels and coordinates in required order
 
 for point in points:
     print(point)

@@ -13,6 +13,11 @@ headlines = ["Local Bear Eaten by Man",
 
 news_ticker = ""
 # write your loop here
+for headline in headlines: # loops through every headline in headlines list.
+    news_ticker += headline + " " # adds the headline each time to the news_ticker.
+    if len(news_ticker) >= 140: # checks whether length of news_ticker is equal or has surpassed 140 characters.
+        news_ticker = news_ticker[:140] # truncates news_ticker to exactly 140 characters.
+        break
 
 
 print(news_ticker)

@@ -9,5 +9,7 @@ scores = {
              "Beth Smith": 98
           }
 
-passed = # write your list comprehension here
+# write your list comprehension here
+passed = [name for name, score in scores.items() if score >= 65] # returns every key(name) where the value(score) >=65 in the dictionary
+
 print(passed)
