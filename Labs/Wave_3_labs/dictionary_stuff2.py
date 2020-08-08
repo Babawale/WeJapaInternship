@@ -7,6 +7,9 @@ basket_items = {'pears': 5, 'grapes': 19, 'kites': 3, 'sandwiches': 8, 'bananas'
 fruits = ['apples', 'oranges', 'pears', 'peaches', 'grapes', 'bananas']
 
 # Your previous solution here
+for item, value in basket_items.items(): #Iterate through the dictionary
+   if item in fruits: #checks if the key(i.e item) is in the list of fruits, 
+       result += value #add the value (number of fruits) to result
 
 print(result)
 
@@ -17,6 +20,9 @@ basket_items = {'peaches': 5, 'lettuce': 2, 'kites': 3, 'sandwiches': 8, 'pears'
 fruits = ['apples', 'oranges', 'pears', 'peaches', 'grapes', 'bananas']
 
 # Your previous solution here
+for item, value in basket_items.items(): #Iterate through the dictionary
+   if item in fruits: #checks if the key(i.e item) is in the list of fruits, 
+       result += value #add the value (number of fruits) to result
 
 print(result)
 
@@ -28,5 +34,8 @@ basket_items = {'lettuce': 2, 'kites': 3, 'sandwiches': 8, 'pears': 4, 'bears': 
 fruits = ['apples', 'oranges', 'pears', 'peaches', 'grapes', 'bananas']
 
 # Your previous solution here
+for item, value in basket_items.items(): #Iterate through the dictionary
+   if item in fruits: #checks if the key(i.e item) is in the list of fruits, 
+       result += value #add the value (number of fruits) to result
 
 print(result)

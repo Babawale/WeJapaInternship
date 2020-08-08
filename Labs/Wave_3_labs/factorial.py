@@ -18,12 +18,13 @@ product = 1
 current = 1
 
 # write your while loop here
-
-    # multiply the product so far by the current number
+while current <= number:
     
+    # multiply the product so far by the current number
+    product *= current
     
     # increment current with each iteration until it reaches number
-
+    current += 1
 
 
 # print the factorial of number

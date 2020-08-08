@@ -5,6 +5,6 @@ cast = ["Barney Stinson", "Robin Scherbatsky", "Ted Mosby", "Lily Aldrin", "Mars
 heights = [72, 68, 72, 66, 76]
 
 # write your for loop here
-
-
+for height, character in enumerate(cast):  # enumerates the character in cast and adds the corresponding height of each cast.
+    cast[height] = character + " " + str(heights[height])
 print(cast)
