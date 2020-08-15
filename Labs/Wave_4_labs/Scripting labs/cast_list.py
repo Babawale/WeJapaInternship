@@ -5,10 +5,12 @@
 def create_cast_list(filename):
     cast_list = []
     #use with to open the file filename
-    #use the for loop syntax to process each line
-    #and add the actor name to cast_list
-
+    with open(filename) as f:
+        for line in f: #use the for loop syntax to process each line
+            name = line.split(",")[0] # splits the line by commas and takes the first index i.e name of cast.
+            cast_list.append(name) #and add the actor name to cast_list
     return cast_list
+    
 
 cast_list = create_cast_list('flying_circus_cast.txt')
 for actor in cast_list:

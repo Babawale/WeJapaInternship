@@ -8,8 +8,14 @@
 def party_planner(cookies, people):
     leftovers = None
     num_each = None
-    num_each = cookies // people
-    leftovers = cookies % people
+    
+    try:
+        num_each = cookies // people
+        leftovers = cookies % people
+    except ZeroDivisionError:
+        print("You entered {} as the number of people.\nThis is an invalid input.\nPlease enter a valid number of people".format(people))
+    
+    return(num_each, leftovers)
 
 
 # The main code block is below; do not edit this
