@@ -8,14 +8,22 @@ list_sum = 0
 
 # seek user input for ten numbers 
 for i in range(10):
+    #while len(user_list) < 10:
     userInput = input("Enter any 2-digit number: ")
-    
-# check to see if number is even and if yes, add to list_sum
-# print incorrect value warning  when ValueError exception occurs
-    number = userInput
-    user_list.append(number)
-    if number % 2 == 0:
-        list_sum += number
+    # check to see if number is even and if yes, add to list_sum
+    # print incorrect value warning  when ValueError exception occurs
+    try:
+        number = int(userInput)
+        if len(str(number))!=2:
+            print("You entered {}. That is an invalid input. Please enter a 2-digit number.".format(userInput))
+            #     #break
+            
+            # user_list.append(number)
+        if (number % 2 == 0):# and (len(str(number))==2):
+            user_list.append(number)
+            list_sum += number
+    except ValueError: # print incorrect value warning  when ValueError exception occurs
+        print("You entered {}. That is an invalid input. Please continue by entering any 2-digit number.".format(userInput))
 
 
 print("user_list: {}".format(user_list))
